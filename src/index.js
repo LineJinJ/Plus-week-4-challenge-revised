@@ -29,15 +29,15 @@ function formatDate(date) {
 
 function search(event) {
   event.preventDefault();
+  let cityElement = document.querySelector("#city");
+  let cityInput = document.querySelector("#city-input");
+  cityElement.innerHTML = cityInput.value;
 }
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
-let cityElement = document.querySelector("#city");
 let searchForm = document.querySelector("#search-form");
 
 searchForm.addEventListener("submit", search);
-
-cityElement.innerHTML = "Paris";
 
 dateElement.innerHTML = formatDate(currentTime);
