@@ -36,8 +36,12 @@ function search(event) {
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
+
 let searchForm = document.querySelector("#search-form");
 
 searchForm.addEventListener("submit", search);
 
 dateElement.innerHTML = formatDate(currentTime);
+
+let temperatureElement = document.querySelector("#temperature");
+let temperature = temperatureElement.innerHTML;
