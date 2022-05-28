@@ -27,9 +27,16 @@ function formatDate(date) {
   return `${days[dayIndex]} ${hours}:${minutes}`;
 }
 
+function search(event) {
+  event.preventDefault();
+}
+
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 let cityElement = document.querySelector("#city");
+let searchForm = document.querySelector("#search-form");
+
+searchForm.addEventListener("submit", search);
 
 cityElement.innerHTML = "Paris";
 
