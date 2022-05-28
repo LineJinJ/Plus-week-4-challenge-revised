@@ -2,7 +2,7 @@ let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 let hours = currentTime.getHours();
 let minutes = currentTime.getMinutes();
-let day = currentTime.getDay();
+let dayIndex = currentTime.getDay();
 
 //Arrays are [] and objects are {} that is the difference
 let days = [
@@ -15,6 +15,6 @@ let days = [
   "Saturday",
 ];
 
-console.log(day);
+console.log(days[dayIndex]);
 
 dateElement.innerHTML = `Saturday ${hours}:${minutes}`;
