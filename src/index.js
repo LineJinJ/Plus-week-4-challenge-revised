@@ -34,17 +34,16 @@ function search(event) {
   cityElement.innerHTML = cityInput.value;
 }
 
-function convertToFahreinheit(event) {
+function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   let temperature = temperatureElement.innerHTML;
-  temperatureElement.innerHTML = (temperature0°C * 9)/5 +32;
 }
 
 //Feature 1#
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
-dateElement.innerHTML = formatDate(date);
+dateElement.innerHTML = formatDate(currentTime);
 
 //Feature #2
 let searchForm = document.querySelector("#search-form");
@@ -53,4 +52,4 @@ searchForm.addEventListener("submit", search);
 //Feature #3 Bonus point
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahreinheit);
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
