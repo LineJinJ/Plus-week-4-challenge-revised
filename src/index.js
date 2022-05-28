@@ -38,6 +38,7 @@ function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   let temperature = temperatureElement.innerHTML;
+  temperatureElement.innerHTML = (temperature * 9) / 5 + 32;
 }
 
 //Feature 1#
