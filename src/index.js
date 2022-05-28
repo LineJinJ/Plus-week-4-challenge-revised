@@ -17,4 +17,4 @@ let days = [
 
 console.log(days[dayIndex]);
 
-dateElement.innerHTML = `Saturday ${hours}:${minutes}`;
+dateElement.innerHTML = `${days[dayIndex]} ${hours}:${minutes}`;
