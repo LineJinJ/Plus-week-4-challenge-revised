@@ -29,5 +29,8 @@ function formatDate(date) {
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
+let cityElement = document.querySelector("#city");
+
+cityElement.innerHTML = "Paris";
 
 dateElement.innerHTML = formatDate(currentTime);
