@@ -22,12 +22,12 @@ function formatDate(date) {
     "Saturday",
   ];
 
+  let day = days[dayIndex];
+
   return `${days[dayIndex]} ${hours}:${minutes}`;
 }
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 
-console.log(days[dayIndex]);
-
-dateElement.innerHTML = `${days[dayIndex]} ${hours}:${minutes}`;
+dateElement.innerHTML = formatDate(currentTime);
